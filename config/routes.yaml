@@ -1,0 +1,17 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+# kernel:
+#     resource: ../src/Kernel.php
+
+api_login_check:
+    path: /api/login_check
+
+api_login:
+    path: /api/login
+    methods: ["POST"]
+
+api_doc:
+    path: /
+    controller: api_platform.swagger_ui.action
