@@ -7,8 +7,7 @@ This project is a simple Symfony application that provides API endpoints for man
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/andy-rs6/BookStore_Intern
-.git
+    git clone https://github.com/andy-rs6/BookStore_Intern.git
     ```
 
 2. Install dependencies using [Composer](https://getcomposer.org/):
@@ -29,14 +28,14 @@ This project relies on the following third-party packages, which can be installe
 
 To install these dependencies, run:
 
-composer require jms/serializer-bundle lexik/jwt-authentication-bundle nelmio/api-doc-bundle
+composer require jms/serializer-bundle
+composer require lexik/jwt-authentication-bundle
+composer require nelmio/api-doc-bundle
 
 
 ## Usage
 
 - API Endpoints
-
-1. List Books
 
 1.Get Book by ID
 
@@ -68,7 +67,7 @@ Body:
 
 5.DELETE /book/{id}
 
-##Pagination and Filtering
+## Pagination and Filtering
 - You can include optional parameters page and pageSize to control pagination.
 - Filtering by author is supported by providing the filter parameter.
   
