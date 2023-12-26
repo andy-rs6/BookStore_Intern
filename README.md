@@ -19,8 +19,6 @@ This project is a simple Symfony application that provides API endpoints for man
 
 3. Set up your database configuration in the `.env` file.
 
-
-
 ## Dependencies
 
 This project relies on the following third-party packages, which can be installed via Composer:
@@ -31,59 +29,48 @@ This project relies on the following third-party packages, which can be installe
 
 To install these dependencies, run:
 
-```bash
 composer require jms/serializer-bundle lexik/jwt-authentication-bundle nelmio/api-doc-bundle
 
 
-Usage
-API Endpoints
-List Books
+## Usage
 
-bash
-Copy code
-GET /books
-Get Book by ID
+- API Endpoints
 
-bash
-Copy code
-GET /book/{id}
-Create Book
+1. List Books
 
-bash
-Copy code
-POST /book/create
+1.Get Book by ID
+
+2.GET /book/{id}
+
+3.POST /book/create
 Body:
 
-json
-Copy code
+```json
 {
     "title": "Sample Book",
     "author": "John Doe",
     "description": "A sample book description",
     "price": 19.99
 }
-Update Book
+```
 
-bash
-Copy code
-PUT /book/edit/{id}
+4.PUT /book/edit/{id}
 Body:
 
-json
-Copy code
+```json
 {
     "title": "Updated Book Title",
     "author": "Jane Doe",
     "description": "An updated description",
     "price": 29.99
 }
-Delete Book
+```
 
-bash
-Copy code
-DELETE /book/{id}
-Pagination and Filtering
-You can include optional parameters page and pageSize to control pagination.
-Filtering by author is supported by providing the filter parameter.
-JWT Authentication
-JWT (JSON Web Token) authentication is implemented for securing the API. To authenticate, obtain a JWT token by making a request to the /api/login_check endpoint with valid credentials.
+5.DELETE /book/{id}
+
+##Pagination and Filtering
+- You can include optional parameters page and pageSize to control pagination.
+- Filtering by author is supported by providing the filter parameter.
+  
+## JWT Authentication
+- JWT (JSON Web Token) authentication is implemented for securing the API. To authenticate, obtain a JWT token by making a request to the /api/login_check endpoint with valid credentials.
