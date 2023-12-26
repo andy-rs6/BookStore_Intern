@@ -70,6 +70,15 @@ Body:
 ## Pagination and Filtering
 - You can include optional parameters page and pageSize to control pagination.
 - Filtering by author is supported by providing the filter parameter.
+```json
+{
+    "page" : 1,
+    "pageSize" : 10,
+    "filter" : {
+        "author" : ""
+    }
+}
+```
   
 ## JWT Authentication
 - JWT (JSON Web Token) authentication is implemented for securing the API. To authenticate, obtain a JWT token by making a request to the /api/login_check endpoint with valid credentials.
