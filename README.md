@@ -79,6 +79,21 @@ Body:
     }
 }
 ```
+
   
 ## JWT Authentication
 - JWT (JSON Web Token) authentication is implemented for securing the API. To authenticate, obtain a JWT token by making a request to the /api/login_check endpoint with valid credentials.
+
+## Run the app  
+```bash
+    symfony server:start
+```
+- Swagger  -> url :  http://127.0.0.1:8000/
+- Postman :
+ ```json
+http://127.0.0.1:8000/books  - GET
+http://127.0.0.1:8000/book/138764 - GET
+http://127.0.0.1:8000/book/create - POST
+http://127.0.0.1:8000/book/edit/1138782 - PUT
+http://127.0.0.1:8000/book/138763 - DEL
+```
